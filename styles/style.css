@@ -21,7 +21,7 @@
   margin: 0;
 }
 .input-nav{
-  width: 20vw;
+  max-width: 40vw;
 }
 
 .logo-mercadoplay{
@@ -30,4 +30,8 @@
 
 .texto-header{
   color: var(--color-letras-ml);
+}
+.texto-header p{
+  font-size: 1rem;
+  font-weight: 500;
 }
