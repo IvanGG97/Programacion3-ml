@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --amarillo:#FFE600;
+  --blanco:#ffffff;
+  --color-letras-ml:#2D3277;
+}
+
+.header{
+  background-color: var(--amarillo);
+  width: 100vw;
+  height: 13vh;
+  padding: 10px;
+}
+
+.img-logo{
+  width: 150px;
+  margin: 0;
+}
+.input-nav{
+  width: 20vw;
+}
+
+.logo-mercadoplay{
+  width: 150px;
+}
+
+.texto-header{
+  color: var(--color-letras-ml);
+}
