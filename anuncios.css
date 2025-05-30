@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .card {
+    display: flex;
+    width: 720px;
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left {
+    background-color: #5edbe3;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .peppa-img {
+    width: 12500%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .right {
+    background-color: #f7e930;
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .max-logo {
+    width: 85px;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .arrow {
+    font-size: 16px;
+  }
+  
