@@ -1,7 +1,11 @@
+/* html,body{
+  overflow-x: hidden;
+} */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto';
 }
 :root{
   --amarillo:#FFE600;
@@ -11,9 +15,12 @@
 
 .header{
   background-color: var(--amarillo);
-  width: 100vw;
   height: 13vh;
   padding: 10px;
+  
+}
+.navbar{
+  background-color: white;
 }
 
 .img-logo{
@@ -36,20 +43,231 @@
   font-size: 1rem;
   font-weight: 500;
 }
-.Carousel-cont {
-  position: relative;
+
+nav li a{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.carrousel-ml{
+  padding-left: 0;
+  padding-right: 0;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.carrousel-ml span{
+  color: black;
+  background-color: rgba(0, 0, 0, 0.456);
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+
+/* ------------------- estilos de juli anuncios---------------------- */
+.contenedor-beneficios {
+  max-width: 1100px;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   overflow: hidden;
 }
 
-/* Degradado blanco en la parte inferior */
-.Carousel-cont::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px; /* ajustá según la altura deseada */
-  background: linear-gradient(to top, rgb(0, 0, 0) 0%, transparent 100%);
-  z-index: 2;
-  pointer-events: none;
+/* Encabezado */
+.encabezado {
+  background-color: #f6f1ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  flex-wrap: wrap;
 }
+
+.titulo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge {
+  background-color: #8000ff;
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.boton-beneficios {
+  background-color: #e6ebff;
+  color: #3483fa;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.boton-beneficios:hover {
+  background-color: #d4e0ff;
+}
+.beneficios {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: white;
+}
+
+.beneficio {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 15px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  gap: 15px;
+}
+
+.icono {
+  background-color: #f3edff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.icono img {
+  width: 32px;
+  height: 32px;
+}
+
+.beneficio p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ------------------- juli anuncios -------------------- */
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 720px;
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 0;
+  }
+  
+  .left {
+    background-color: #5edbe3;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .peppa-img {
+    width: 20rem;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .right {
+    background-color: #f7e930;
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .max-logo {
+    width: 85px;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .arrow {
+    font-size: 16px;
+  }
+  /* ---------------- footer lourdes----------------- */
+  .footer-bg {
+      background-color: #2c2c2c;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .footer-logo {
+      width: 100px;
+    }
+
+    .red-box {
+      background-color: red;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .social-icons img {
+      width: 24px;
+      margin: 0 6px;
+    }
+
+    .btn-white {
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+
+    .btn-white:hover {
+      background-color: #e4e4e4;
+    }
+
+    a.text-white {
+      text-decoration: none;
+    }
+
+    a.text-white:hover {
+      text-decoration: underline;
+    }
